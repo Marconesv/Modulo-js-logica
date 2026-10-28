@@ -47,17 +47,36 @@
 // //tive que mudar 7 linhas
 
 
-const nomes = ["Lucas", "Micael", "William", "Leonardo", "Luiza", "Aila"]
-const medias = [5.5, 8, 6.5, 6, 9.5, 9]
+// const nomes = ["Lucas", "Micael", "William", "Leonardo", "Luiza", "Aila"]
+// const medias = [5.5, 8, 6.5, 6, 9.5, 9]
 
+const medias = []
 const mediaDaEscola = 7
+let input;
 
-for (let i = 0; i < medias.length; i++) {
-     // i = 0
-    
-    if (medias[i] >= mediaDaEscola) {
-        console.log("O aluno: " + nomes[i] + " Está Aprovado")
-    } else {
-        console.log("O aluno: " + nomes[i] + " Está Reprovado")
+while (input != -1) {
+    while (input < 0 || isNaN(input)) {
+        console.log("Valor invalido.")
+        input = Number(prompt("Media do próximo aluno: "))
     }
+    input = Number(prompt("Media do próximo aluno: "))
+    medias.push
 }
+
+ console.log(medias)
+
+
+// let aprovados = 0;
+// let somaDasMedias = 0;
+
+
+
+// for (let i = 1; i < medias.length; i++) {
+     
+    
+//     if (medias[i] >= mediaDaEscola) {
+//         console.log("O aluno: " + nomes[i] + " Está Aprovado")
+//     } else {
+//         console.log("O aluno: " + nomes[i] + " Está Reprovado")
+//     }
+// }
