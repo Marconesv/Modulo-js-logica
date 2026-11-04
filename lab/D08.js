@@ -6,7 +6,7 @@ let meta = Number(prompt("Qual a meta de saldo?"));
 
 let meses = 0;
 let saldo = 0;
-let juros = 0.5;
+let juros = 0.005;
 
 while (saldo < meta) {
     saldo += deposito;
